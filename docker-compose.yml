@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  org.igroknet.auth.api:
+    image: ${DOCKER_REGISTRY}orgigroknetauthapi
+    build:
+      context: .
+      dockerfile: Org.Igroknet.Auth.Api/Dockerfile
